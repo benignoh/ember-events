@@ -6,7 +6,7 @@
 </p>
 <ul>
 	{{#each model as |task|}}
-		<li>{{task.text}} - <button {{action 'deleteTask' task}}>Borrar</button> </li>
+		{{task-item task=task cnt=this}}
 	{{/each}}
 </ul>
 
