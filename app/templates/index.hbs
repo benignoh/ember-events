@@ -1,0 +1,14 @@
+<h1>Pantalla index</h1>
+{{!-- {{x-men}} --}}
+<p>
+	{{input value=newTaskText}}
+	<button {{action 'createTask' newTaskText}}>Create task</button>
+</p>
+<ul>
+	{{#each model as |task|}}
+		<li>{{task.text}} - <button {{action 'deleteTask' task}}>Borrar</button> </li>
+	{{/each}}
+</ul>
+
+
+
